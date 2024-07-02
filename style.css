@@ -1,0 +1,229 @@
+*, body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+/* navbar */
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: #065184;
+
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header-title{
+    width: 30vw;
+    margin-left: 10vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.header-title h3{
+    color: white;
+    font-size: larger;
+}
+
+.header-menu{
+    width: 50vw;
+    margin-right: 10vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-menu li{
+    list-style: none;
+}
+.header-menu li a{
+    text-decoration: none;
+    color: white;
+}
+.header-menu li a:hover{
+    text-decoration: underline;
+}
+#selected{
+    text-decoration: underline white;
+}
+
+/* footer */
+footer{
+    width: 80vw;
+    height: 20vh;
+    border-top: #065184 solid 2px;
+    margin: 2em 10vw 0 10vw;
+    padding-top: 2em;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.footer-email, .footer-2nd{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+.footer-email a, .footer-2nd a{
+    line-height: 2em;
+}
+.footer-email a:hover, .footer-2nd a:hover{
+    color: #065184;
+}
+
+/* home */
+.home-image{
+    width: 100vw;
+    height: 70vh;
+    background-image: linear-gradient(to bottom, #08609b84, #042a439e), url("images/home-background.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home-image h1{
+    margin-left: 20vw;
+    color: white;
+    font-size: 3em;
+}
+.home-image h3{
+    margin-left: 20vw;
+    margin-bottom: 1em;
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-pres{
+    width: calc(80vw - 4em);
+    padding: 2vw;
+    margin-top: 2em;
+    background-color: #0652842d;
+
+    display: flex;
+    flex-direction: row;
+}
+.home-pres-left{
+    width: 60vw;
+}
+.home-pres-right{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+#arrow{
+    fill: rgb(40, 40, 40);
+    width: 3em;
+    height: 3em;
+    margin-right: 2em;
+}
+#arrow:hover{
+    fill: #065184;
+    cursor: pointer;
+}
+
+.home-journal{
+    width: 80vw;
+    margin-top: 2em;
+    background-color: #0652842d;
+
+    display: flex;
+    flex-direction: row;
+}
+.home-journal img{
+    width: 12vw;
+}
+.home-journal-text{
+    width: calc(80vw - 12vw - 2em);
+    padding: 1em;
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+    position: relative;
+}
+#journal-reference{
+    position: absolute;
+    bottom: 1em;
+}
+
+/* about */
+.about-text{
+    width: 80vw;
+    margin: 0 10vw;
+    color: rgb(40, 40, 40);
+    line-height: 2em;
+}
+
+.about-text p{
+    margin: 2em 0;
+}
+
+.image-presentation{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    margin-top: 2em;
+}
+
+.image-presentation img{
+    width: 40vw;
+    height: 40vh;
+    background-image: linear-gradient(to bottom, #ffffff00, #1158867d), url("images/group.JPG");
+    background-size: cover;
+    background-position: center;
+}
+.side-text{
+    width: calc(40vw - 2em);
+    height: 40vh;
+    padding: 0 1em;
+    position: relative;
+}
+.side-text h3{
+    font-weight: 300;
+}
+#names{
+    position: absolute;
+    bottom: 0;
+}
+#link:hover{
+    color: #065184;
+}
+
+/* project */
+.project{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+.project h1{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.project-image{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project img{
+    width: 60vw;
+    margin: 4em;
+}
